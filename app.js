@@ -21,7 +21,7 @@ var commentRoutes    = require("./routes/comments"),
 //mongoose.connect("mongodb://localhost:27017/yelp_camp" ,{ useNewUrlParser: true });
 mongoose.connect("mongodb+srv://heshamxa:<kamigoinazawa>@cluster0-uanoq.mongodb.net/test?retryWrites=true&w=majority" ,{ useNewUrlParser: true ,
 	useCreateIndex :true}).then(() => {
-	console.log(:connect to db);
+	console.log("connect to db");
 }).catch(err => {
 	console.log("ERROR:", err.message);
 });
