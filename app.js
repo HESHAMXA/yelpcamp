@@ -23,7 +23,7 @@ mongoose.connect('mongodb+srv://heshamxa:kamigoinazawa@cluster0-uanoq.mongodb.ne
 	useNewUrlParser: true,
 	useCreateIndex: true
 }).then(() => {
-	console.log('Connected to DB!');
+	console.log('Connected to DB!'); 
 }).catch(err => {
 	console.log('ERROR:', err.message);
 });
