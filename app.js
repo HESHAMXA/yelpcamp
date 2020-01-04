@@ -18,8 +18,8 @@ var commentRoutes    = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes      = require("./routes/index"); 
 //console.log(process.env.DATABASEURL);
-//mongoose.connect(DATABASEURL);
-mongoose.connect(DATABASEURL, {
+//mongoose.connect();
+mongoose.connect("mongodb+srv://heshamxa:neemleen@cluster0-uanoq.mongodb.net/test?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useCreateIndex: true
  }).then(() => {
