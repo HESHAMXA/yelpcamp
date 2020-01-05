@@ -13,15 +13,15 @@ var express     = require("express"),
 	seedDB      = require("./seed.js");
 
 // requiring routs
-
+// "mongodb://localhost:27017/yelp_camp"
 var commentRoutes    = require("./routes/comments"),
 	campgroundRoutes = require("./routes/campgrounds"),
 	indexRoutes      = require("./routes/index"); 
-//console.log(process.env.DATABASEURL);
-mongoose.connect("mongodb://localhost:27017/yelp_camp" ,{ useNewUrlParser: true });
+console.log(process.env.DATABASEURL);
+mongoose.connect( process.env.DATABASEURL,{ useNewUrlParser: true });
 //mongoose.connect("mongodb+srv://heshamxa:neemleen@cluster0-uanoq.mongodb.net/test?retryWrites=true&w=majority", {
-	useNewUrlParser: true,
-	useCreateIndex: true
+	//useNewUrlParser: true,
+	//useCreateIndex: true
  //}).then(() => {
 	//console.log('Connected to DB!'); 
 //}).catch(err => { 
