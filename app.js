@@ -22,11 +22,11 @@ mongoose.connect("mongodb://localhost:27017/yelp_camp" ,{ useNewUrlParser: true 
 //mongoose.connect("mongodb+srv://heshamxa:neemleen@cluster0-uanoq.mongodb.net/test?retryWrites=true&w=majority", {
 	useNewUrlParser: true,
 	useCreateIndex: true
- }).then(() => {
-	console.log('Connected to DB!'); 
-}).catch(err => { 
-	console.log('ERROR:', err.message);
-});
+ //}).then(() => {
+	//console.log('Connected to DB!'); 
+//}).catch(err => { 
+	//console.log('ERROR:', err.message);
+//});
 mongoose.set('useNewUrlParser', true);
 mongoose.set('useFindAndModify', false);
 mongoose.set('useCreateIndex', true);
